@@ -163,40 +163,6 @@ Singleton class managing database connections. Ensures only one database connect
 ### QueryBuilder.java
 Builder pattern implementation for constructing dynamic SQL INSERT queries. Supports method chaining for fluent API.
 
-## Areas for Improvement
-
-### Security
-- [x] **Environment Variables**: Database credentials moved from code to `.env` file
-- [ ] Use **PreparedStatements** instead of string concatenation to prevent SQL injection
-- [ ] Implement input validation and sanitization
-
-### Code Quality
-- [ ] Complete implementation of `StudentDaoImplement` methods
-- [ ] Add try-catch blocks for exception handling
-- [ ] Add logging (SLF4J, Log4j) for debugging
-- [ ] Follow Java naming conventions (packages should be lowercase: `dao` instead of `Dao`)
-- [ ] Add Javadoc comments for all public methods
-
-### Database
-- [ ] Implement connection pooling (HikariCP, C3P0) for better performance
-- [ ] Add database migrations for schema versioning
-- [ ] Implement transaction management
-
-### Testing
-- [ ] Add unit tests using JUnit 4/5
-- [ ] Add integration tests for database operations
-- [ ] Use test fixtures and mock database connections
-
-### Documentation
-- [ ] Add API documentation
-- [ ] Include troubleshooting guide
-- [ ] Add code examples for each DAO method
-
-### Architecture
-- [ ] Consider using a framework like Spring Boot for larger applications
-- [ ] Implement service layer between DAO and Controller
-- [ ] Add proper error handling and custom exceptions
-
 ## Dependencies
 
 - **Java**: JDK 8+
@@ -204,16 +170,6 @@ Builder pattern implementation for constructing dynamic SQL INSERT queries. Supp
 - **MySQL JDBC Driver**: mysql-connector-java 8.0+
 
 ## License
-
-This repository is under a proprietary license.
-
-All rights are reserved. You may NOT:
-- Copy, redistribute, or sublicense the code.
-- Modify, adapt, or create derivative works.
-- Use this code for commercial purposes.
-
-Permission to use, modify, or redistribute this code may only be granted explicitly in writing by the copyright holder.
-
 See the [LICENSE](./LICENSE) file for full details.
 ## Author
 
